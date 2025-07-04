@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --light-hover: #e6d6ff;
+  --shadow-color: #000;
+  --custom-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Manual .dark mode (matches layout.js) */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --light-hover: #1a0030;
+  --shadow-color: #fff;
+  --custom-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  font-family: Outfit;
+}
+
+.grid-autofit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .grid-autofit {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
