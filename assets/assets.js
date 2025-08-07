@@ -82,11 +82,13 @@ export const workData = [
         title: 'Full Stack project',
         description: 'Hotel Booking Website',
         bgImage: '/work-1.png',
+        link: 'https://quickstay-ebon-six.vercel.app/'
     },
     {
         title: 'Fontend project',
         description: 'My Portfolio',
         bgImage: '/work-2.png',
+        link: 'https://portfolio-surya-two.vercel.app/'
     },
     {
         title: 'Full Stack AI based project',
